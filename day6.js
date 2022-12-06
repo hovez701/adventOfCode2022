@@ -11,8 +11,7 @@ function findPacket(datastream){
     while (i <datastream.length){
         let possiblePacket = datastream.substring(i, i+4);
         // console.log(possiblePacket);
-        if(possiblePacket.substring(1,).match(possiblePacket[0]) === null && possiblePacket.substring(2,).match(possiblePacket[1]) === null && possiblePacket.substring(3,).match(possiblePacket[2]) === null
-        ){
+        if(checkMatches(possiblePacket)===true){
             console.log(possiblePacket);
             console.log(i+4)
             break;
