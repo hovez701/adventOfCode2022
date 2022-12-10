@@ -37,7 +37,6 @@ function findPacketFourteen(datastream){
             break;
         }
         
-    
         i+=1;
     }
 }
@@ -52,7 +51,6 @@ function checkMatches(possiblePacket){
     }
     return false;
 }
-
 
 
 findPacketFourteen(input);
